@@ -16,7 +16,7 @@ eureka:
   client:
     serviceUrl:
     # 修改为eureka_service
-      defaultZone: http://gen-eurekaw4vvczueog-59498866bd-htbjh:8761/eureka/
+      defaultZone: http://registry:8761/eureka/
 
 security:
   oauth2:
@@ -36,24 +36,6 @@ spring:
     port: 5672
     username: guest
     password: guest
-  # add 链路监控
-  sleuth:
-    web:
-      client:
-        enbabled: true
-    sampler:
-      probability: 1
-  zipkin:
-  # 修改为zipkin_service
-    base-url: http://gen-zipkincnt82m263h-ddcd67d4f-hbfd2:9411
-    enabled: true
-    self-tracing:
-      enabled: true
-    sender:
-      type: web
-    locator:
-      discovery:
-        enabled: true
 #percentage
 management.endpoints.web.exposure.include: "*"
 #spring.cloud.bus.enabled=true
