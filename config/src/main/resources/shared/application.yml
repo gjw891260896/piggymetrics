@@ -16,7 +16,7 @@ eureka:
   client:
     serviceUrl:
     # 修改为eureka_service
-      defaultZone: http://gen-eurekah02tq0dma9:8761/eureka/
+      defaultZone: http://gen-eurekaw4vvczueog-59498866bd-htbjh:8761/eureka/
 
 security:
   oauth2:
@@ -45,7 +45,7 @@ spring:
       probability: 1
   zipkin:
   # 修改为zipkin_service
-    base-url: http://gen-zipkinvrp4otwhxj:9411
+    base-url: http://gen-zipkincnt82m263h-ddcd67d4f-hbfd2:9411
     enabled: true
     self-tracing:
       enabled: true
